@@ -1,0 +1,3 @@
+const colegas= ["Alan","Alex","Cla","Ananda",'Toinha','Cainã','David',"Davi","Derek","Diogo","Eduardo",'Felipão','Marcos','Geo',"Geraldo","Guilherme","Gustavo","Havilla",'Pablo V.','Líder','Eu(vc)',"Vanvan","JV","Jonatas","Kauã",'Kaylon','Gremista','Allin',"Luis","Márcio","M. Eduarda","Isa",'Ligía','Livîa','Pamela',"P Flávio.","P Martinho.","Góis","Ravi",'Tiagogo']
+        console.log(colegas.length)
+        document.getElementById('nome').innerHTML = "Temos " +colegas.length+ " colegas, Eles são: " + colegas

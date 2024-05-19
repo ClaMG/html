@@ -6,6 +6,7 @@
     <title>Calculadora de IMC</title>
 </head>
 <body>
+    <script src="js/calc imc.js"></script>
     <form id="imcForm">
         <label for="weight">Peso (kg):</label>
         <input id="weight" name="weight" required><br><br>
@@ -18,16 +19,5 @@
 
     <div id="result"></div>
 
-    <script>
-        function calculateIMC() {
-            weight = parseFloat(document.getElementById('weight').value);
-            height = parseFloat(document.getElementById('height').value);
-            
-            imc = weight / (height * height);
-
-            resultDiv = document.getElementById('result');
-            resultDiv.innerHTML = 'Seu IMC é: ' + imc.toFixed(2);
-        }
-    </script>
 </body>
 </html>

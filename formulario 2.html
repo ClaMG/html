@@ -6,6 +6,7 @@
     <title>ontem</title>
 </head>
 <body onkeypress="sla()">
+    <script src="js/form2.js"></script>
     <form action="">
         <p>Nome</p>
         <input type="text" id="nome"><br>
@@ -19,17 +20,5 @@
         <input type="text" id="end"><br>
     </form>
     <p id="p"> Seu nome é ,seu rg é , seu cpf é , você é  e você mora </p>
-
-    <script>
-        function sla(){
-            let nome = document.getElementById("nome").value
-            let rg = document.getElementById("rg").value
-            let cpf = document.getElementById("cpf").value
-            let pro = document.getElementById("pro").value
-            let end = document.getElementById("end").value
-
-            document.getElementById("p").innerHTML= ` Seu nome é ${nome},seu rg é ${rg}, seu cpf é ${cpf}, você é ${pro} e você mora ${end}`
-        }
-    </script>
 </body>
 </html>

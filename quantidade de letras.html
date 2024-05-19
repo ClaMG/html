@@ -6,16 +6,9 @@
     <title>Document</title>
 </head>
 <body>
+    <script src="js/qletras.js"></script>
     <input type="text" id="seunome">
     <button onclick="colocar()">colocar</button>
     <p id="nome"></p>
-
-    <script>
-        function colocar(){
-            let nome= document.getElementById("seunome").value
-            console.log(nome.length)
-            document.getElementById("nome").innerHTML=("Seu nome tem "+ nome.length + " letras")   
-        }
-    </script>
 </body>
-</html>
+</html>  
