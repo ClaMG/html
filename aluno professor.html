@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="js/aluno.js"></script>
+    nome <input type="text" id="n">
+    <button onclick="nomes()">apertar</button>
+    <p id="p"></p>
+
+    <script>
+        function nomes(){
+            let nome = document.getElementById("n").value
+
+            if ((nome == Davidson) || (nome == Sidio) || (nome == Luis)){
+                document.getElementById("p").innerHTML= `Ola ${nome}, Você é um professor `
+            }
+            else{
+                document.getElementById("p").innerHTML= `Ola ${nome}, Você é um(a) estudante ou aluno(a)`
+            }        
+    
+}
+    </script>
+</body>
+</html>
