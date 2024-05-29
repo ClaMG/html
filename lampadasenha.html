@@ -11,20 +11,6 @@
     <p id="p"></p>
     <img src="img/apagada.jpg" alt="acender" id="img">
     
-    <script>
-        function aperta(){
-            let senha = document.getElementById("senha").value
-            let lamp = document.getElementById("img")
-
-            if (senha == 1234){
-                lamp.src ="img/acender.jpg"
-                document.getElementById('p').innerHTML= "Deu certo"
-            }else{
-                lamp.src ="img/apagada.jpg"
-                document.getElementById('p').innerHTML= "Senha errada"
-                
-            }
-        }
-    </script>
+    <script src="js/lampada_s.js"></script>
 </body>
 </html>
