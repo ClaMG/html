@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src=""></script>
+        <input type="text" id="texto">
+        <button onclick="colocar()">colocar</button>
+        <p id="p"></p>
+        <script>
+            const array=[]
+            function colocar(){
+                array.push(document.getElementById("texto").value)
+                document.getElementById("p").innerHTML= array.join('<br>-')
+                document.getElementById("texto").value = ""
+            } 
+        </script>
+</body>
+</html>
