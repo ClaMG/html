@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="va">
+    <input type="text" id="ad">
+    <button onclick="des()">Desconto</button>
+    <button onclick="acr()">Acressimo</button>
+    <p id="p"></p>
+    <script>
+        function des(){
+            let v = +document.getElementById("va").value
+            let d = +document.getElementById("ad").value
+            let r = (v*d)/100
+            let result = v-r
+            document.getElementById("p").innerHTML= result
+        }
+        function acr(){
+            let v = +document.getElementById("va").value
+            let a = +document.getElementById("ad").value
+            let r = (v*a)/100
+            let result = v+r
+            document.getElementById("p").innerHTML= result
+        }
+    </script>
+</body>
+</html>
